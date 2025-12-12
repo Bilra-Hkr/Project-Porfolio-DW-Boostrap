@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - Deriel Chaerahman</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Deriel C.</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <img src="img/hero.png" alt="Hero profile" class="profile-img rounded-circle">
+                    <h1 class="display-4 fw-bold mb-3">
+                        <span class="text-gradient">Deriel Chaerahman</span>
+                    </h1>
+                    <h2>
+                        <span class="fs-2 text-white">I'm a </span>
+                        <span class="fs-2" id="typing-text"></span><span class="typing-cursor">|</span>
+                    </h2>
+                    <p class="lead text-secondary mb-5">
+                        Hello there, Welcome to my portfolio website! I'm Deril, an informatics student who has interest
+                        in web development. Nice to meet you!
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="about.html" class="btn btn-glow-base btn-filled">About Me</a>
+                        <a href="portfolio.html" class="btn btn-glow-base btn-outlined">My Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Hero Section -->
+
+    <!-- Feature / Servire Section  -->
+    <section class="py-5" id="services">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-12">
+                    <h2 class="fw-bold display-6 text-white">My Expertise</h2>
+                    <p class="text-white-50">Memiliki kemampuan dalam bidang</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h4 class="feature-title">Web Development</h4>
+                        <p class="feature-desc">
+                            Membangun website yang cepat dan responsif menggunakan HTML, CSS, dan JS, serta framework
+                            Bootstrap.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-cup-hot"></i>
+                        </div>
+                        <h4 class="feature-title">Java Programming</h4>
+                        <p class="feature-desc">
+                            Mengembangkan software GUI berbasis objek (OOP).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-terminal"></i>
+                        </div>
+                        <h4 class="feature-title">Linux Distro Ubuntu</h4>
+                        <p class="feature-desc">
+                            Manajemen server Ubuntu, Shell Scripting, dan penggunaan Command Line.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-database-fill"></i>
+                        </div>
+                        <h4 class="feature-title">Database</h4>
+                        <p class="feature-desc">
+                            Merancang skema database (ERD), SQL Query (MySQL), dan manajemen table data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Feature / Servire Section  -->
+
+    <!-- Gallery of Project Section -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold display-6 text-white">Project Gallery</h2>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="gallery-frame">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/project1.png" class="d-block w-100 project-slide-img"
+                                        alt="Web project character slider">
+                                    <div class="carousel-caption-custom d-none d-md-block">
+                                        <h3 class="caption-title">Web Character Game Slider</h3>
+                                        <p class="caption-desc">
+                                            Menampilkan character dari game Genshin Impact secara bergilir. Terinspirasi
+                                            dari fitur game character selection.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="img/project2.png" class="d-block w-100 project-slide-img"
+                                        alt="web project NextJS">
+                                    <div class="carousel-caption-custom d-none d-md-block">
+                                        <h3 class="caption-title">Web Portfolio NextJS</h3>
+                                        <p class="caption-desc">
+                                            Mengembangkan website portfolio modern menggunakan framework NextJS.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="img/project3.png" class="d-block w-100 project-slide-img"
+                                        alt="Web project PWA">
+                                    <div class="carousel-caption-custom d-none d-md-block">
+                                        <h3 class="caption-title">Web Portfolio WPA</h3>
+                                        <p class="caption-desc">
+                                            Website berbasis HTML, CSS, dan JS dengan konsep Progressive Web App (PWA).
+                                            Akses offline dan performa cepat.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="img/project4.png" class="d-block w-100 project-slide-img"
+                                        alt="Java Project">
+                                    <div class="carousel-caption-custom d-none d-md-block">
+                                        <h3 class="caption-title">Sistem Antrian Pasien</h3>
+                                        <p class="caption-desc">
+                                            Software manajemen antrian pasien klinik berbasis desktop. Dikembangkan
+                                            menggunakan Java GUI.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Gallery of Project Section -->
+
+    <!-- Footer  -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row flex justify-content-end mb-4">
+                <div class="col-md-4">
+                    <h5 class="footer-title">About Website</h5>
+                    <p>
+                        Website portofolio ini menampilkan informasi diri dan kemampuan pengembang (deril) dan daftar
+                        project yang pernah dikerjakan.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="about.html" class="footer-link">About Me</a>
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="footer-title">My Contact</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> Padang, Indonesia</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i> dariel@gmail.com</p>
+                    <div class="mt-3">
+                        <a href="https://www.instagram.com/bilra_ch?igsh=em5pNzh0b2hoa3o3" class="social-icon"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/Bilra-Hkr" class="social-icon"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                            class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row copyright-border">
+                <div class="text-md-center">
+                    <p class="mb-0">&copy;2025 Copyright : Deriel Chaerahman.</p>
+                    <p class="mb-0 small">Develop with Bootstrap 5</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/typing.js"></script>
+</body>
+
+</html>
